@@ -1,5 +1,6 @@
 from ._anvil_designer import Form2Template
 from anvil import *
+from routing import router
 
 class Form2(Form2Template):
     def __init__(self, **properties):
