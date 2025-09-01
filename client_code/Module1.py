@@ -11,14 +11,15 @@ from routing.router import launch # 启动 Router
 from routing.router import debug_logging # 可选：打开日志
 from routing.router import Route
 
-
+class About(Route): # 打开 /about
+    path = "/"
+    form = "Form2"
+    
 class Home(Route): # 打开根路径 /
     path = "/Form1"
     form = "Form1" # 你的旧首页 Form
 
-class About(Route): # 打开 /about
-    path = "/"
-    form = "Form2"
+
 
 
 class wode(Route): # 打开 /about
